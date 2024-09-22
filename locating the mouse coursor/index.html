@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #mouse_click{
+            width: 100vh;
+            height: 100vh;
+            position: relative;
+            background-color: lightgrey;
+        }
+    </style>
+    <script>
+        function find_mouse(event){
+            document.getElementById("display").textContent=
+            "Clent X :"+ event.clientX+ " ,Clent Y :" +event.clientY+ 
+            " |  OffsetX :" + event.offsetX +",OffsetY:"+event.offsetY+
+            "| ScreenX:"+event.screenX+",ScreenY:"+event.screenY;
+        }
+    </script>
+</head>
+<body>
+    
+    <div class="mouse" id="mouse_click"  onclick="find_mouse(event)">
+        Click anywherer in the screen
+    </div>
+
+    <div class="display" id="display">
+        the mouse is plaved at
+    </div>
+</body>
+</html>

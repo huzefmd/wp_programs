@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function bigFount(){
+            var para=document.getElementById("para").style;
+            para.fontFamily="Georgia ,serif";
+            para.fontSize='50pt';
+            para.fontWeight='bold'   ;
+            para.color='red';
+            para.fontStyle='italic';
+
+
+        };
+        function smallFount(){
+            var para=document.getElementById("para").style;
+            para.fontFamily="serif";
+            para.fontSize='25pt';
+            para.fontWeight='small'   ;
+            para.color='violet'
+            // para.fontStyle='';
+        }
+
+    </script>
+</head>
+<body>
+    <p id="para">
+        this is a small para
+    </p>
+    <button onclick="bigFount()">make____big</button>    
+    <button onclick="smallFount()">make____small</button>    
+</body>
+</html>

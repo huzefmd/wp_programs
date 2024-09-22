@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var msg=[
+            "the first name should be followed by secound name",
+            "Addres should be end with pin code",
+            "enter valid email id"
+        ];
+
+        function  helpmsg(msgno){
+            document.getElementById('help').value=msg[msgno];
+        }
+    </script>
+</head>
+<body>
+    <input type="text"  size="40" placeholder="enter ur name"
+    onfocus="helpmsg(0)"><br><br>
+    <input type="text"  size="40" placeholder="enter adddres"
+    onfocus="helpmsg(1)"><br><br>
+    <input type="text"  size="40" placeholder="enter email id"
+    onfocus="helpmsg(2)"><br><br>
+
+    <label for="helpbox">helpbox</label>
+    <input type="text" id="help" size="40"><br><br>
+    
+</body>
+</html>
