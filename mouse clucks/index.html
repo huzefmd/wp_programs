@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function mouse(btn){
+            btn.style.font.width="bold 25px Timmes 100vh ";
+            btn.style.width="100vh";
+            btn.style.height="100vh";
+            btn.style.backgroundcolor="red";
+
+        }
+        function mouse_up(btn){
+            btn.style.font="bold 10px Timmes";
+        }
+
+
+    </script>
+</head>
+<body>
+    <h1>on mouse click see the changes</h1>
+    <br>
+    <form >
+        <input type="button" onmousedown="mouse(this)" onmouseup="mouse_up(this)">
+    </form>
+</body>
+</html>
